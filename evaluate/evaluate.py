@@ -3,7 +3,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import json
 import pickle
 
-test = pd.read_csv('../data/processed/test_final.csv')
+test = pd.read_csv('../data/test.csv')
 
 with open('../models/model.pkl', 'rb') as f:
     model = pickle.load(f)
