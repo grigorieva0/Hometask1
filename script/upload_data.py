@@ -11,8 +11,8 @@ data = pd.read_csv(file_path)
 train_data, test_data = train_test_split(data, test_size = 0.2, random_state=42)
 
 raw_folder = os.path.join(current_dir, '..', '..', 'data', 'raw')
-train_file_path = os.path.join(raw_folder, 'train.csv')
+train_file_path = os.path.join(raw_folder, 'california_housing_train.csv')
 train_data.to_csv(train_file_path, index=False)
 
-test_file_path = os.path.join(raw_folder, 'test.csv')
+test_file_path = os.path.join(raw_folder, 'california_housing_test.csv')
 test_data.to_csv(test_file_path, index=False)
