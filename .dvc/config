@@ -1,0 +1,7 @@
+[core]
+    remote = ssh-storage
+['remote "ssh-storage"']
+    url = ssh://dvc@192.168.56.130/Hometask1/dataset
+    password = dvc-pk
+    user = dvc-pk
+    port = 22
